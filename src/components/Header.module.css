@@ -1,0 +1,42 @@
+.header {
+    font-family: 'Architects Daughter', cursive;
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(202, 193, 193);
+    padding: 20px;
+    font-size: 6vh;
+    text-transform: uppercase;
+    height: 10vh;
+  
+}
+
+.logo {
+    text-shadow: 1px 1px 5px  rgba(0, 0, 0, 0.616);
+    font-weight: bolder;
+    margin-left: 20px;
+}
+
+.menu {
+    color: red;
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.603);
+    padding-left: 30px;
+}
+
+.links{
+    color: #333a35;
+    color: rgb(74, 60, 22);
+}
+.active{
+    color:red;
+}
