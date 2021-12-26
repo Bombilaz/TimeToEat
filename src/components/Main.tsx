@@ -111,7 +111,7 @@ let Main: React.FC = () => {
 
   }
 
-  const toggle = () => {
+  const toggle = () => { 
     if (timer <= 0) {
       return;
     }
