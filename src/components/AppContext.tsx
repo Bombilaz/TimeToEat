@@ -2,12 +2,12 @@ import { createContext, useState } from 'react'
 
 export const AppContext = createContext<any>(
   { 
-    timer: 200, setTimer: () => { }, 
+    timer: 1800, setTimer: () => { }, 
     workTime: 30, setWorkTime: () => { },
     breakTime: 5, setBreakTime: () => { },
     pizzasCount: 4, setPizzasCount: () => { },
   });
-
+ 
 export const AppContextProvider: React.FC = ({ children }: any) => {
   const [timer, setTimer] = useState<number>(1800);
   const [timeInterval, setTimeInterval] = useState<Function>();

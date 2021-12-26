@@ -21,11 +21,11 @@ let Main: React.FC = () => {
   const { timer, setTimer } = useContext<any>(AppContext)
   const { timeInterval, setTimeInterval } = useContext<any>(AppContext);
   const { typeButton, setTypeButton } = useContext<any>(AppContext);
-  const { totalTime, setTotalTime } = useContext<any>(AppContext);
+  const { totalTime, } = useContext<any>(AppContext);
   const { maxPizza } = useContext<any>(AppContext);
   const { currentPizza, setCurrentPizza } = useContext<any>(AppContext);
   const { typeTimer, setTypeTimer } = useContext<any>(AppContext);
-  const { currentBreakTime, setcurrentBreakTime } = useContext<any>(AppContext);
+  const { currentBreakTime } = useContext<any>(AppContext);
   let intervalHandle: Object;
 
   useEffect(() => {
@@ -46,17 +46,12 @@ let Main: React.FC = () => {
         setCurrentPizza((value: number) => value + 1);
       }
       else if(currentPizza === maxPizza){
-        console.log(maxPizza);
-        console.log('Все сделали начальник');
-        
         setCurrentPizza(1);
       }
       else{
         console.log('hui');
       }
     }
-  console.log(typeof maxPizza);
-  console.log(typeof currentPizza);
   }, [timer])
   function checkSrcBreak() {
     if (timer === currentBreakTime) {
