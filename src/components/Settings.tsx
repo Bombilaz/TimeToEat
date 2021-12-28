@@ -21,6 +21,7 @@ function Settings({ toggle }: SettingsProps) {
     setCurrentBreakTime,
   } = useContext<any>(AppContext);
 
+  
   const changeValue = (func: any, event: any,) => {
     func(() => event.target.value)
   }

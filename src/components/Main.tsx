@@ -27,6 +27,7 @@ let Main: React.FC = () => {
   const { typeTimer, setTypeTimer } = useContext<any>(AppContext);
   const { currentBreakTime } = useContext<any>(AppContext);
   let intervalHandle: Object;
+  
 
   useEffect(() => {
     if (timer <= 0 && typeTimer) {

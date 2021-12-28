@@ -7,6 +7,7 @@ export const AppContext = createContext<any>(
     breakTime: 5, setBreakTime: () => { },
     pizzasCount: 4, setPizzasCount: () => { },
   });
+  
  
 export const AppContextProvider: React.FC = ({ children }: any) => {
   const [timer, setTimer] = useState<number>(1800);

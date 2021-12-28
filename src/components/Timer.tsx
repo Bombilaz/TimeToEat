@@ -15,6 +15,7 @@ function Timer({ seconds }: any) {
     setShowSettings((toggle: boolean) => !toggle)
   }
  
+  
   return (
     <div className='timerTwo'>
       <img className='timeinput' src={input} width={290} alt='input'></img>
