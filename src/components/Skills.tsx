@@ -14,7 +14,7 @@ let Skills = () => {
     if(timer <= 0){
       clearInterval(timeInterval);
     }
-  }, [timer])
+  }, [timer]) 
 
   return (
     <div className='SkillsElements'>
