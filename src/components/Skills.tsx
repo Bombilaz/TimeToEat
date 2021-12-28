@@ -13,7 +13,6 @@ let Skills = () => {
   useEffect(()=>{
     if(timer <= 0){
       clearInterval(timeInterval);
-      
     }
   }, [timer])
 
