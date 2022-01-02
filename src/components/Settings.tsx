@@ -1,13 +1,9 @@
 import { useContext } from 'react';
 import { AppContext } from './AppContext';
 
-
-
 interface SettingsProps {
   toggle: any;
 }
-
-
 
 function Settings({ toggle }: SettingsProps) {
 
@@ -17,8 +13,7 @@ function Settings({ toggle }: SettingsProps) {
     pizzasCount, setPizzasCount,
     setTimer, setTotalTime,
     setTypeButton, timeInterval,
-    setMaxPizza, currentBreakTime,
-    setCurrentBreakTime,
+    setMaxPizza, setCurrentBreakTime,
   } = useContext<any>(AppContext);
 
   

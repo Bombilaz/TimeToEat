@@ -26,19 +26,36 @@ let Main: React.FC = () => {
   const { currentPizza, setCurrentPizza } = useContext<any>(AppContext);
   const { typeTimer, setTypeTimer } = useContext<any>(AppContext);
   const { currentBreakTime } = useContext<any>(AppContext);
-  let intervalHandle: Object;
+  const { typeTheme, setTypeTheme} = useContext<any>(AppContext);
+  let intervalHandle:any = null;
   
+  useEffect(()=>{
+    if(typeTimer && timeInterval && !typeButton){
+      setTypeTheme('workTime');
+    }
+  }, [typeTimer, typeButton]);
+
+  function getTheme(){
+    switch(typeTheme){
+      case 'workTime':
+        return 'mainWork';
+      case 'breakTime':
+        return 'mainBreak';
+      default:
+        return 'mainDefault';
+    }
+  }
+ 
 
   useEffect(() => {
     if (timer <= 0 && typeTimer) {
       setTypeTimer((typeTime: any) => !typeTime);
       setTimer(currentBreakTime);
-      setTimeout(() => {
-        toggle();
-      }, 2000);
-
+      setTypeTheme('breakTime');
+      toggle();
     }
     else if (timer <= 0 && !typeTimer) {
+      setTypeTheme('default');
       clearInterval(timeInterval);
       setTypeTimer((typeTime: any) => !typeTime);
       setTypeButton((typeButton: boolean) => !typeButton);
@@ -53,7 +70,8 @@ let Main: React.FC = () => {
         console.log('hui');
       }
     }
-  }, [timer])
+  }, [timer]);
+
   function checkSrcBreak() {
     if (timer === currentBreakTime) {
       return zero;
@@ -109,7 +127,6 @@ let Main: React.FC = () => {
     else if (timer <= (totalTime / 7) * 1 && timer > (totalTime / 7) * 0) {
       return one;
     }
-
   }
 
   const toggle = () => { 
@@ -118,14 +135,17 @@ let Main: React.FC = () => {
     }
     setTypeButton(!typeButton);
     if (!!typeButton) {
-      intervalHandle = setInterval<any>(() => (setTimer((timer: number) => timer - 1)), 1000)
+      intervalHandle = setInterval<any>(() => (setTimer((timer: number) => timer - 1)), 1)
       setTimeInterval(intervalHandle)
     } else {
       clearInterval(timeInterval);
     }
   }
+
+  
+
   return (
-    <div className='main'>
+    <div className={getTheme()}>
       <Timer seconds={timer} />
       <img className='pizza' src={typeTimer ? checkSrcWork() : checkSrcBreak()} alt='какая-то' />
       <div className='playblock'>

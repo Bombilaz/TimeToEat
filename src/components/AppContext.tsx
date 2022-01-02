@@ -22,6 +22,7 @@ export const AppContextProvider: React.FC = ({ children }: any) => {
   const [currentPizza, setCurrentPizza] = useState<number>(1);
   const [currentBreakTime, setCurrentBreakTime] = useState<number>(300);
   const [typeTimer, setTypeTimer] = useState<boolean>(true);
+  const [typeTheme, setTypeTheme] = useState<string>('default');
 
   return (
     <AppContext.Provider
@@ -38,6 +39,7 @@ export const AppContextProvider: React.FC = ({ children }: any) => {
         currentPizza, setCurrentPizza,
         typeTimer, setTypeTimer,
         currentBreakTime, setCurrentBreakTime,
+        typeTheme, setTypeTheme,
       }}>
       {children}
     </AppContext.Provider>
