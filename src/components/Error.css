@@ -1,0 +1,12 @@
+.blankPage{
+  display: flex;
+  font-size: 58px;
+  padding: 100px 120px 0px 120px;
+  justify-content: space-between;
+}
+.blankPage img{
+  width: 600px;
+}
+.blankPage p{
+  transform:skewY(-1.5deg);
+}
