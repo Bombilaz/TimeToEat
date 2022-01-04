@@ -35,7 +35,7 @@ let Main: React.FC = () => {
     }
   }, [typeTimer, typeButton]);
 
-  function getTheme(){
+  function getMainTheme(){
     switch(typeTheme){
       case 'workTime':
         return 'mainWork';
@@ -45,9 +45,20 @@ let Main: React.FC = () => {
         return 'mainDefault';
     }
   }
- 
 
+  function getPizzaTheme(){
+    switch(typeTheme){
+      case 'workTime':
+        return 'pizzaWork';
+      case 'breakTime':
+        return 'pizzaBreak';
+      default:
+        return 'pizzaDefault';
+    }
+  }
+ 
   useEffect(() => {
+    document.title = timer;
     if (timer <= 0 && typeTimer) {
       setTypeTimer((typeTime: any) => !typeTime);
       setTimer(currentBreakTime);
@@ -135,7 +146,7 @@ let Main: React.FC = () => {
     }
     setTypeButton(!typeButton);
     if (!!typeButton) {
-      intervalHandle = setInterval<any>(() => (setTimer((timer: number) => timer - 1)), 1)
+      intervalHandle = setInterval<any>(() => (setTimer((timer: number) => timer - 1)), 1000)
       setTimeInterval(intervalHandle)
     } else {
       clearInterval(timeInterval);
@@ -145,9 +156,9 @@ let Main: React.FC = () => {
   
 
   return (
-    <div className={getTheme()}>
+    <div className={getMainTheme()}>
       <Timer seconds={timer} />
-      <img className='pizza' src={typeTimer ? checkSrcWork() : checkSrcBreak()} alt='какая-то' />
+      <img className={getPizzaTheme()} src={typeTimer ? checkSrcWork() : checkSrcBreak()} alt='какая-то' />
       <div className='playblock'>
         <img
           className='play'

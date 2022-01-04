@@ -8,9 +8,9 @@ let Header: React.FC = () => {
 
       <ul className={classes.menu}>
         <li><NavLink className={classes.links} to='/Skills'>Skills</NavLink></li>
-        <li><NavLink className={classes.links} to='/Test'>Achievements</NavLink></li>
-        <li><NavLink className={classes.links} to='/d'>Chat</NavLink></li>
-        <li><NavLink className={classes.links} to='/g'>Donate</NavLink></li>
+        <li><NavLink className={classes.links} to='/Achievements'>Achievements</NavLink></li>
+        <li><NavLink className={classes.links} to='/Chat'>Chat</NavLink></li>
+        <li><NavLink className={classes.links} to='/Donate'>Donate</NavLink></li>
       </ul>
 
 

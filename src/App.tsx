@@ -2,9 +2,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Skills from './components/Skills';
 import Header from './components/Header';
 import Main from './components/Main';
+import Achievements from './components/Achievements';
+import Donate from './components/Donate';
+import Chat from './components/Chat';
 import React from 'react';
-import {Blabla} from './Test'
-
 
 
 const App: React.FC = () =>{
@@ -13,9 +14,11 @@ const App: React.FC = () =>{
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path='/Skills' element={<Skills />} />
           <Route path='/' element={<Main />} />
-          <Route path='/Test' element={<Blabla />} />
+          <Route path='/Skills' element={<Skills />} />
+          <Route path='/Achievements' element={<Achievements />} />
+          <Route path='/Chat' element={<Chat />} />
+          <Route path='/Donate' element={<Donate />} />
         </Routes>
       </BrowserRouter>
   );
