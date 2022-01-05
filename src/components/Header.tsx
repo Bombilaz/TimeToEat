@@ -26,7 +26,7 @@ let Header: React.FC = () => {
           <h5 className={classes.center}>Welcome</h5>
         </div>
       </div>}
-      <span className={classes.logo}><NavLink className={classes.links} to='/'>PizzaTimer</NavLink></span>
+      <span className={classes.logo}><NavLink className={classes.links} to='/Main'>PizzaTimer</NavLink></span>
       <ul className={classes.menu}>
         <li><NavLink className={classes.links} to='/Skills'>Skills</NavLink></li>
         <li><NavLink className={classes.links} to='/Achievements'>Achievements</NavLink></li>
