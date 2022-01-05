@@ -58,7 +58,7 @@ let Main: React.FC = () => {
   }
  
   useEffect(() => {
-    document.title = timer;
+    
     if (timer <= 0 && typeTimer) {
       setTypeTimer((typeTime: any) => !typeTime);
       setTimer(currentBreakTime);

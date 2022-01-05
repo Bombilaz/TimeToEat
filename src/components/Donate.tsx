@@ -3,8 +3,8 @@ import Cat from '../img/cat.png';
 function Donate() {
   return (
     <div className="blankPage">
-      <p>This webpage is not available.
-         We are sorry for this inconvenience</p>
+      <p>This webpage is not<br/> available.<br/>
+         We are sorry for this<br/> inconvenience</p>
       <img src={Cat}></img>
     </div>
   )

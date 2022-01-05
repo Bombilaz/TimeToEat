@@ -1,8 +1,9 @@
 .blankPage{
   display: flex;
   font-size: 58px;
-  padding: 100px 120px 0px 120px;
+  padding: 130px 120px 168px 120px;
   justify-content: space-between;
+  background-color: rgb(245, 245, 245);
 }
 .blankPage img{
   width: 600px;

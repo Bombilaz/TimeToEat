@@ -29,7 +29,7 @@
 }
 
 li {
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.603);
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
     padding-left: 30px;
 }
 
@@ -37,6 +37,27 @@ li {
     color: #333a35;
     color: rgb(74, 60, 22);
 }
+.tutorialWrapper{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.513);
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    transition: 3s step-end;
+    justify-content: center;
+}
+.tutorialBlock{
+    padding: 15px;
+    background-color: #ffffff;
+    width: 1000px;
+    height: 580px;
+    margin-top: 8vh;
+    border-radius: 10px;
+}
 .active{
     color:red;
+}
+.center{
+    text-align: center;
 }
