@@ -1,17 +1,15 @@
 {
   "files": {
-    "main.css": "/TimeToEat/static/css/main.6cb44b98.chunk.css",
-    "main.js": "/TimeToEat/static/js/main.9be4d99f.chunk.js",
-    "main.js.map": "/TimeToEat/static/js/main.9be4d99f.chunk.js.map",
+    "main.css": "/TimeToEat/static/css/main.82529454.chunk.css",
+    "main.js": "/TimeToEat/static/js/main.27f0ee51.chunk.js",
+    "main.js.map": "/TimeToEat/static/js/main.27f0ee51.chunk.js.map",
     "runtime-main.js": "/TimeToEat/static/js/runtime-main.3c4ccc33.js",
     "runtime-main.js.map": "/TimeToEat/static/js/runtime-main.3c4ccc33.js.map",
-    "static/css/2.6c0f60ba.chunk.css": "/TimeToEat/static/css/2.6c0f60ba.chunk.css",
-    "static/js/2.341c957e.chunk.js": "/TimeToEat/static/js/2.341c957e.chunk.js",
-    "static/js/2.341c957e.chunk.js.map": "/TimeToEat/static/js/2.341c957e.chunk.js.map",
+    "static/js/2.ca6da206.chunk.js": "/TimeToEat/static/js/2.ca6da206.chunk.js",
+    "static/js/2.ca6da206.chunk.js.map": "/TimeToEat/static/js/2.ca6da206.chunk.js.map",
     "index.html": "/TimeToEat/index.html",
-    "static/css/2.6c0f60ba.chunk.css.map": "/TimeToEat/static/css/2.6c0f60ba.chunk.css.map",
-    "static/css/main.6cb44b98.chunk.css.map": "/TimeToEat/static/css/main.6cb44b98.chunk.css.map",
-    "static/js/2.341c957e.chunk.js.LICENSE.txt": "/TimeToEat/static/js/2.341c957e.chunk.js.LICENSE.txt",
+    "static/css/main.82529454.chunk.css.map": "/TimeToEat/static/css/main.82529454.chunk.css.map",
+    "static/js/2.ca6da206.chunk.js.LICENSE.txt": "/TimeToEat/static/js/2.ca6da206.chunk.js.LICENSE.txt",
     "static/media/0.0a27cba2.png": "/TimeToEat/static/media/0.0a27cba2.png",
     "static/media/1.f846605b.png": "/TimeToEat/static/media/1.f846605b.png",
     "static/media/2.16531bdc.png": "/TimeToEat/static/media/2.16531bdc.png",
@@ -21,6 +19,7 @@
     "static/media/6.72e5a95f.png": "/TimeToEat/static/media/6.72e5a95f.png",
     "static/media/7.b8d8bfbb.png": "/TimeToEat/static/media/7.b8d8bfbb.png",
     "static/media/8.0a5598d8.png": "/TimeToEat/static/media/8.0a5598d8.png",
+    "static/media/cat.d075afb5.png": "/TimeToEat/static/media/cat.d075afb5.png",
     "static/media/input22.8a7ca0f7.png": "/TimeToEat/static/media/input22.8a7ca0f7.png",
     "static/media/pause.93441a64.png": "/TimeToEat/static/media/pause.93441a64.png",
     "static/media/play.0f41782a.png": "/TimeToEat/static/media/play.0f41782a.png",
@@ -28,9 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.3c4ccc33.js",
-    "static/css/2.6c0f60ba.chunk.css",
-    "static/js/2.341c957e.chunk.js",
-    "static/css/main.6cb44b98.chunk.css",
-    "static/js/main.9be4d99f.chunk.js"
+    "static/js/2.ca6da206.chunk.js",
+    "static/css/main.82529454.chunk.css",
+    "static/js/main.27f0ee51.chunk.js"
   ]
 }
