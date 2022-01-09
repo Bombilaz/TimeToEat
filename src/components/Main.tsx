@@ -132,7 +132,7 @@ let Main: React.FC = () => {
     }
     setTypeButton(!typeButton);
     if (!!typeButton) {
-      intervalHandle = setInterval<any>(() => (setTimer((timer: number) => timer - 1)), 10)
+      intervalHandle = setInterval<any>(() => (setTimer((timer: number) => timer - 1)), 1000)
       setTimeInterval(intervalHandle)
     } else {
       clearInterval(timeInterval);
