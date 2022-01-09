@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.scss';
-import './components/Error.css';
+import './styles/Error.css';
 import { AppContextProvider } from './components/AppContext';
 
 

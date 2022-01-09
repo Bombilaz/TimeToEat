@@ -1,4 +1,4 @@
-import input from './../img/input22.png';
+import input from './../img/inputtimer.png';
 import settings from './../img/finalsettings.png';
 import Settings from './Settings';
 import { useContext } from 'react';
@@ -10,7 +10,9 @@ interface TimerProps{
 
 
 function Timer({ seconds }: any) {
-  const { showSettings, setShowSettings, maxPizza, currentPizza , typeTimer} = useContext<any>(AppContext);
+  const { showSettings, setShowSettings, 
+    maxPizza, currentPizza , 
+    typeTimer, typeTheme } = useContext<any>(AppContext);
   const toggleShowSettings = () => {
     setShowSettings((toggle: boolean) => !toggle)
   }
@@ -21,7 +23,7 @@ function Timer({ seconds }: any) {
       <img className='timeinput' src={input} width={290} alt='input'></img>
       <div className='topBlock'>
         <span>{currentPizza}/{maxPizza}</span>
-        <span>{typeTimer ? 'WorkTime' : 'BreakTime'}</span>
+        <span>{typeTheme}</span>
       </div>
       <div className='times'>
         {`${seconds / 60 < 10 ? '0' : ''}${Math.floor(seconds / 60)} : 

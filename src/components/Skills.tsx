@@ -6,7 +6,7 @@
 // import 'react-circular-progressbar/dist/styles.css';
 import Cat from '../img/cat.png';
 
-import './Skills.css'
+import '../styles/Skills.css'
 
 let Skills = () => {
 //   const { timer, timeInterval} = useContext(AppContext);

@@ -13,7 +13,7 @@ function Settings({ toggle }: SettingsProps) {
     pizzasCount, setPizzasCount,
     setTimer, setTotalTime,
     setTypeButton, timeInterval,
-    setMaxPizza, setCurrentBreakTime,
+    setMaxPizza, setCurrentBreakTime, setTypeTheme
   } = useContext<any>(AppContext);
 
   
@@ -29,6 +29,7 @@ function Settings({ toggle }: SettingsProps) {
     clearInterval(timeInterval);
     setMaxPizza(+pizzasCount);
     setCurrentBreakTime(breakTime * 60);
+    setTypeTheme('in Waiting');
   }
 
   return (

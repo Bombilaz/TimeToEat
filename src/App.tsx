@@ -14,7 +14,7 @@ const App: React.FC = () =>{
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path='/Main' element={<Main />} />
+          <Route path='/TimeToEat/' element={<Main />} />
           <Route path='/Skills' element={<Skills />} />
           <Route path='/Achievements' element={<Achievements />} />
           <Route path='/Chat' element={<Chat />} />

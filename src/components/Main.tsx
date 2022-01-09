@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import eight from "./../img/8.png";
 import seven from "./../img/7.png";
 import six from "./../img/6.png";
@@ -14,7 +14,7 @@ import pause from './../img/pause.png';
 import { AppContext } from './AppContext'
 import Timer from './Timer';
 
-import './Main.css'
+import '../styles/Main.css';
 
 let Main: React.FC = () => {
 
@@ -31,29 +31,18 @@ let Main: React.FC = () => {
   
   useEffect(()=>{
     if(typeTimer && timeInterval && !typeButton){
-      setTypeTheme('workTime');
+      setTypeTheme('WorkTime');
     }
   }, [typeTimer, typeButton]);
 
   function getMainTheme(){
     switch(typeTheme){
-      case 'workTime':
+      case 'WorkTime':
         return 'mainWork';
-      case 'breakTime':
+      case 'BreakTime':
         return 'mainBreak';
       default:
         return 'mainDefault';
-    }
-  }
-
-  function getPizzaTheme(){
-    switch(typeTheme){
-      case 'workTime':
-        return 'pizzaWork';
-      case 'breakTime':
-        return 'pizzaBreak';
-      default:
-        return 'pizzaDefault';
     }
   }
  
@@ -62,11 +51,11 @@ let Main: React.FC = () => {
     if (timer <= 0 && typeTimer) {
       setTypeTimer((typeTime: any) => !typeTime);
       setTimer(currentBreakTime);
-      setTypeTheme('breakTime');
+      setTypeTheme('BreakTime');
       toggle();
     }
     else if (timer <= 0 && !typeTimer) {
-      setTypeTheme('default');
+      setTypeTheme('in Waiting');
       clearInterval(timeInterval);
       setTypeTimer((typeTime: any) => !typeTime);
       setTypeButton((typeButton: boolean) => !typeButton);
@@ -76,9 +65,6 @@ let Main: React.FC = () => {
       }
       else if(currentPizza === maxPizza){
         setCurrentPizza(1);
-      }
-      else{
-        console.log('hui');
       }
     }
   }, [timer]);
@@ -146,7 +132,7 @@ let Main: React.FC = () => {
     }
     setTypeButton(!typeButton);
     if (!!typeButton) {
-      intervalHandle = setInterval<any>(() => (setTimer((timer: number) => timer - 1)), 1000)
+      intervalHandle = setInterval<any>(() => (setTimer((timer: number) => timer - 1)), 10)
       setTimeInterval(intervalHandle)
     } else {
       clearInterval(timeInterval);
@@ -158,7 +144,7 @@ let Main: React.FC = () => {
   return (
     <div className={getMainTheme()}>
       <Timer seconds={timer} />
-      <img className={getPizzaTheme()} src={typeTimer ? checkSrcWork() : checkSrcBreak()} alt='какая-то' />
+      <img className='pizza' src={typeTimer ? checkSrcWork() : checkSrcBreak()} alt='какая-то' />
       <div className='playblock'>
         <img
           className='play'
