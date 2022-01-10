@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/TimeToEat/static/css/main.7a8d12fa.chunk.css",
-    "main.js": "/TimeToEat/static/js/main.f52490b6.chunk.js",
-    "main.js.map": "/TimeToEat/static/js/main.f52490b6.chunk.js.map",
+    "main.css": "/TimeToEat/static/css/main.b6106682.chunk.css",
+    "main.js": "/TimeToEat/static/js/main.c042e4d1.chunk.js",
+    "main.js.map": "/TimeToEat/static/js/main.c042e4d1.chunk.js.map",
     "runtime-main.js": "/TimeToEat/static/js/runtime-main.3c4ccc33.js",
     "runtime-main.js.map": "/TimeToEat/static/js/runtime-main.3c4ccc33.js.map",
     "static/js/2.633c8cac.chunk.js": "/TimeToEat/static/js/2.633c8cac.chunk.js",
     "static/js/2.633c8cac.chunk.js.map": "/TimeToEat/static/js/2.633c8cac.chunk.js.map",
     "index.html": "/TimeToEat/index.html",
-    "static/css/main.7a8d12fa.chunk.css.map": "/TimeToEat/static/css/main.7a8d12fa.chunk.css.map",
+    "static/css/main.b6106682.chunk.css.map": "/TimeToEat/static/css/main.b6106682.chunk.css.map",
     "static/js/2.633c8cac.chunk.js.LICENSE.txt": "/TimeToEat/static/js/2.633c8cac.chunk.js.LICENSE.txt",
     "static/media/0.0a27cba2.png": "/TimeToEat/static/media/0.0a27cba2.png",
     "static/media/1.65919805.png": "/TimeToEat/static/media/1.65919805.png",
@@ -24,12 +24,12 @@
     "static/media/inputtimer.0e136523.png": "/TimeToEat/static/media/inputtimer.0e136523.png",
     "static/media/pause.2cceedba.png": "/TimeToEat/static/media/pause.2cceedba.png",
     "static/media/play.da6c9efa.png": "/TimeToEat/static/media/play.da6c9efa.png",
-    "static/media/Main.css": "/TimeToEat/static/media/popup.3947c676.png"
+    "static/media/main.scss": "/TimeToEat/static/media/popup.3947c676.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3c4ccc33.js",
     "static/js/2.633c8cac.chunk.js",
-    "static/css/main.7a8d12fa.chunk.css",
-    "static/js/main.f52490b6.chunk.js"
+    "static/css/main.b6106682.chunk.css",
+    "static/js/main.c042e4d1.chunk.js"
   ]
 }
