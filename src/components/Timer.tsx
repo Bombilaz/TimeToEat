@@ -20,7 +20,7 @@ function Timer({ seconds }: any) {
   
   return (
     <div className='timerTwo'>
-      <img className='timeinput' src={input} width={290} alt='input'></img>
+      <img className='timeinput' src={input} alt='input'></img>
       <div className='topBlock'>
         <span>{currentPizza}/{maxPizza}</span>
         <span>{typeTheme}</span>
@@ -30,7 +30,7 @@ function Timer({ seconds }: any) {
            ${seconds % 60 < 10 ? '0' : ''}${seconds % 60}`}
       </div>
       <div className='settings'>
-        <img src={settings} onClick={toggleShowSettings} height={42} />
+        <img className='settings__img' src={settings} onClick={toggleShowSettings}  />
       </div>
       {showSettings && <Settings toggle={toggleShowSettings}/>}
     </div>

@@ -5,7 +5,6 @@ let Skill: React.FC = () => {
   return (
     <div>
       
-      
     </div>
   )
 }

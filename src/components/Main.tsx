@@ -11,10 +11,11 @@ import zero from "./../img/0.png";
 
 import play from './../img/play.png';
 import pause from './../img/pause.png';
-import { AppContext } from './AppContext'
+import { AppContext } from './AppContext';
 import Timer from './Timer';
 
-import '../styles/Main.css';
+
+import '../styles/Main/main.scss';
 
 let Main: React.FC = () => {
 

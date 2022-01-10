@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
-import '../styles/Header.css';
+import '../styles/Header/header.scss';
+
 import { AppContext } from './AppContext';
 import { useContext, useEffect, useState } from 'react';
 
