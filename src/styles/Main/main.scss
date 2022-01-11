@@ -1,0 +1,243 @@
+.headers{
+  width: 230px;
+  margin-top: 13px;
+  color: #403750;
+}
+
+.label-input{
+  width: 230px;
+  text-align: right;
+  font-weight: 600;
+  font-size: 19px;
+  color: #403750;
+}
+
+.mainDefault {
+  background-color: #fffef2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 85vh;
+  transition: 1.5s ease-in-out;
+  @media screen and (max-width: 575px) {
+    height: 300px;
+    padding-right: 7px;
+    justify-content: right;
+  }
+}
+
+.mainWork{
+  background-color: #f0bab6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 85vh;
+  transition: 1.5s ease-in-out;
+  @media screen and (max-width: 575px) {
+    height: 300px;
+  }
+}
+.mainBreak{
+  background-color: #7dc3a3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 85vh;
+  transition: 1.5s ease-in-out;
+  @media screen and (max-width: 575px) {
+    height: 300px;
+  }
+}
+
+.pizza{
+  height: 77vh;
+  @media screen and (max-width: 575px) {
+    height: 200px;
+  }
+}
+
+.play {    
+  z-index: 1;
+  cursor: pointer;
+  @media screen and (max-width: 575px) {
+    width: 29px;
+    position: relative;
+    left: -90px;
+  }
+}
+ 
+.playblock{
+  position: absolute;
+  top: 52.5%;
+
+  width: 100%;
+  @media screen and (max-width: 575px){
+    top: 30.7%;
+    display: flex;
+    justify-content: right;
+    
+  }
+}
+
+.popUp{
+  background: url('../../img/popup.png');
+  position: absolute;
+  width: 301px;
+  height: 435px;
+  left: 0,5%;
+  top: 58%;
+  z-index: 2;
+  background-size:100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popUp input{
+  width: 230px;
+  -webkit-appearance: none;
+  background: #665486;
+  border-radius: 20px;
+  height: 7px;
+  outline: none;
+}
+
+.popUp input::-webkit-slider-thumb{
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  background: #403750;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.saveSettingsButton{
+  margin: 24px;
+  height: 42px;
+  border-radius: 80px 80px 150px 150px;
+  width: 190px;
+  font-family:'Architects Daughter', cursive;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #403750;
+  border: solid #f5f5f5 5px;
+  box-shadow: 0px 0px 0px 5px #403750;;
+}
+
+.saveSettingsButton span{
+  font-size: 30px;
+  color: white;
+}
+
+.settings{
+  position: absolute;
+  z-index: 10;
+  left: 72%;
+  top: 48%;
+  filter: invert(30%);
+  transition: ease-in-out 0.25s;
+
+  @media screen and (max-width: 575px) {
+    left: 90%;
+    top: 43%;
+  }
+
+  &__img{
+    height:42px;
+    @media screen and (max-width: 575px) {
+      height:12px;
+    }
+  }
+}
+.settings:hover{
+
+  left: 71.5%;
+  top: 42%;
+  cursor: pointer;
+  filter: invert(0%);
+  transform: rotate(130deg);
+  transition: ease-in-out 0.25s;
+}
+.settings:active{
+  top: 43%;
+  left: 72.7%;
+  filter: invert(40%);
+  transform: rotate(-40deg);
+  transition: ease-in-out 0.1s;
+}
+
+.settings-content{
+  position: relative;
+  top: 60px;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.timeinput{
+  position: relative;
+  z-index: 10;
+  width: 290px;
+  @media screen and (max-width: 575px){
+    width: 100px;
+  }
+}
+
+.timerTwo{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 6%;
+  top: 24%;
+  font-family: 'Architects Daughter', cursive;
+  width: 20%;
+  height: 10%;
+  @media screen and (max-width: 575px) {
+    left: 9%;
+    top: 13%;
+  }
+}
+
+.times{
+  text-align: center;
+  width: 210px;
+  position: absolute;
+  left: 7%;
+  top: 35%;
+  font-weight: 900;
+  font-size: 45px;
+  color: #403750;
+  z-index: 10;
+  @media screen and (max-width: 575px){
+    left: -10%;
+    top: 43%;
+    font-size: 15px;
+    width: 70px;
+  }
+}
+.topBlock{
+  color: #403750;
+  position: absolute;
+  font-weight: bold;
+  width: 225px;
+  font-size: 33px;
+  left: 12%;
+  top: -20%;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width:575px) {
+    font-size: 10px;
+    top: 22%;
+    width: 65px;
+    left: 2%;
+  }
+}
