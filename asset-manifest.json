@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/TimeToEat/static/css/main.499d972e.chunk.css",
-    "main.js": "/TimeToEat/static/js/main.c042e4d1.chunk.js",
-    "main.js.map": "/TimeToEat/static/js/main.c042e4d1.chunk.js.map",
+    "main.js": "/TimeToEat/static/js/main.60d32a10.chunk.js",
+    "main.js.map": "/TimeToEat/static/js/main.60d32a10.chunk.js.map",
     "runtime-main.js": "/TimeToEat/static/js/runtime-main.3c4ccc33.js",
     "runtime-main.js.map": "/TimeToEat/static/js/runtime-main.3c4ccc33.js.map",
     "static/js/2.633c8cac.chunk.js": "/TimeToEat/static/js/2.633c8cac.chunk.js",
@@ -30,6 +30,6 @@
     "static/js/runtime-main.3c4ccc33.js",
     "static/js/2.633c8cac.chunk.js",
     "static/css/main.499d972e.chunk.css",
-    "static/js/main.c042e4d1.chunk.js"
+    "static/js/main.60d32a10.chunk.js"
   ]
 }
