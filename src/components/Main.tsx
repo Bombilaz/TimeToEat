@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, {useContext, useEffect} from "react";
 import eight from "./../img/8.png";
 import seven from "./../img/7.png";
 import six from "./../img/6.png";
@@ -11,11 +11,14 @@ import zero from "./../img/0.png";
 
 import play from './../img/play.png';
 import pause from './../img/pause.png';
-import { AppContext } from './AppContext';
+import {AppContext} from './AppContext';
 import Timer from './Timer';
 
 
 import '../styles/Main/main.scss';
+import {useAppDispatch, useAppSelector} from "../hooks/redux";
+import {$CombinedState} from "redux";
+import {timerSlice} from "../store/reducers/TimerSlice";
 
 let Main: React.FC = () => {
 
@@ -139,19 +142,24 @@ let Main: React.FC = () => {
       clearInterval(timeInterval);
     }
   }
+  // const {} = useAppSelector(store=>store[$CombinedState])
+  const {time} = useAppSelector(state => state.timerReducer)
+  const {decrement} = timerSlice.actions
+  const dispatch = useAppDispatch()
 
-  
 
   return (
     <div className={getMainTheme()}>
-      <Timer seconds={timer} />
+      <Timer seconds={time} />
       <img className='pizza' src={typeTimer ? checkSrcWork() : checkSrcBreak()} alt='какая-то' />
       <div className='playblock'>
         <img
           className='play'
           src={typeButton ? play : pause}
           alt='какая-то'
-          onClick={toggle} />
+          // onClick={toggle}
+          onClick={()=> dispatch(decrement(1))}
+        />
       </div>
     </div>
   )
