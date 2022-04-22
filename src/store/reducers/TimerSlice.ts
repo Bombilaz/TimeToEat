@@ -17,6 +17,9 @@ export const timerSlice = createSlice({
     reducers: {
         decrement(state, action: PayloadAction<number>){
             state.time -= action.payload;
+        },
+        changeTypeButton(state){
+            state.isPlaying = !state.isPlaying
         }
     }
 })
