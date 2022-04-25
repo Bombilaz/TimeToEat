@@ -17,8 +17,9 @@ import Timer from './Timer';
 
 import '../styles/Main/main.scss';
 import {useAppDispatch, useAppSelector} from "../hooks/redux";
-import {$CombinedState} from "redux";
+
 import {timerSlice} from "../store/reducers/TimerSlice";
+import {themeSlice} from "../store/reducers/ThemeSlice";
 
 let Main: React.FC = () => {
 
@@ -84,9 +85,9 @@ let Main: React.FC = () => {
             return four;
         } else if (timer <= (currentBreakTime / 7) * 3 && timer > (currentBreakTime / 7) * 2) {
             return five;
-        } else if (timer <= (currentBreakTime / 7) * 2 && timer > (currentBreakTime / 7) * 1) {
+        } else if (timer <= (currentBreakTime / 7) * 2 && timer > (currentBreakTime / 7)) {
             return six;
-        } else if (timer <= (currentBreakTime / 7) * 1 && timer > (currentBreakTime / 7) * 0) {
+        } else if (timer <= (currentBreakTime / 7) && timer > 0) {
             return seven;
         } else if (timer === 0) {
             return eight;
@@ -126,8 +127,8 @@ let Main: React.FC = () => {
         }
     }
 
-    const {time} = useAppSelector(state => state.timerReducer)
-    const {isPlaying} = useAppSelector(state => state.timerReducer)
+    const {time} = useAppSelector(state => state.timeReducer)
+    const {isPlaying} = useAppSelector(state => state.timeReducer)
     const {decrement, changeTypeButton} = timerSlice.actions
     const dispatch = useAppDispatch()
 
@@ -137,8 +138,7 @@ let Main: React.FC = () => {
         }
         dispatch(changeTypeButton())
         if(!isPlaying){
-            intervalHandle = setInterval(()=>(dispatch(decrement(1))), 1000)
-            setTimeInterval(intervalHandle)
+            setTimeInterval(()=>setInterval(()=>(dispatch(decrement(1))), 1000))
         }
         else {
             clearInterval(timeInterval)

@@ -20,7 +20,7 @@ function Timer({seconds}: any) {
     const toggleShowSettings = () => {
         setShowSettings((toggle: boolean) => !toggle)
     }
-    const {time} = useAppSelector(store=>store.timerReducer)
+    const {time} = useAppSelector(store=>store.timeReducer)
 
 
     return (
