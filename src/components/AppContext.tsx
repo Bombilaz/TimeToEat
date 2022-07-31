@@ -21,7 +21,7 @@ export const AppContextProvider: React.FC = ({ children }: any) => {
   const [pizzasCount, setPizzasCount] = useState<number>(4);
   const [currentPizza, setCurrentPizza] = useState<number>(1);
   const [currentBreakTime, setCurrentBreakTime] = useState<number>(300);
-  const [typeTimer, setTypeTimer] = useState<boolean>(true);
+  const [typeTimer, setTypeTimer] = useState(true);
   const [typeTheme, setTypeTheme] = useState<string>('in Waiting');
 
   return (

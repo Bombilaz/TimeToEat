@@ -17,16 +17,15 @@ let Skills = () => {
 //     } 
 //   }, [timer]) 
   return (
-    // <div className="blankPage">
-    //   <p>This webpage is not<br/> available.<br/>
-    //      We are sorry for this<br/> inconvenience</p>
-    //   <img src={Cat}></img>
-    // </div>
-    <></>
+    <div className="blankPage">
+      <p>This webpage is not<br/> available.<br/>
+         We are sorry for this<br/> inconvenience</p>
+      <img src={Cat}></img>
+    </div>
   )
 }
     // <div className='SkillsElements'>
-    //   <Timer seconds={timer} />
+      // <Timer seconds={timer} />
     //   <div className="links">
     //     <div style={{ width: 200, height: 200 }}>
     //       <CircularProgressbar 
