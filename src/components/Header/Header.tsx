@@ -1,9 +1,8 @@
-import { NavLink } from 'react-router-dom';
-
 import * as S from './Header.styles';
 
-import { AppContext } from '../AppContext';
-import { FC, useContext, useEffect, useState } from 'react';
+import { FC  } from 'react';
+import PageLink from "../PageLink/PageLink";
+import Link from "next/link";
 
 const Header: FC = () => {
   //git st
@@ -25,13 +24,11 @@ const Header: FC = () => {
 
   return (
     <S.Container>
-      geggefwfqfwefeсйу
-      dwdwfwefwefedwdwdfwe
       <S.PagesLinks>
-        {/*  <li><NavLink className='links' to='/Skills'>Skills</NavLink></li>*/}
-        {/*  <li><NavLink className='links' to='/Achievements'>Achievements</NavLink></li>*/}
-        {/*  <li><NavLink className='links' to='/Chat'>Chat</NavLink></li>*/}
-        {/*  <li><NavLink className='links' to='/Donate'>Donate</NavLink></li>*/}
+        <PageLink url={'/skills'} textLink='Skills' />
+        <PageLink url={'/achievements'} textLink='Achievements' />
+        <PageLink url={'/chat'} textLink='Chat' />
+        <PageLink url={'/donate'} textLink='Donate' />
       </S.PagesLinks>
     </S.Container>
   );
