@@ -25,7 +25,7 @@ const Header: FC = () => {
 
   return (
     <S.Container>
-      geggefwfwefef
+      geggefwfwefefacws
       dwdwfwefwefedwdwd
       <S.PagesLinks>
         {/*  <li><NavLink className='links' to='/Skills'>Skills</NavLink></li>*/}
