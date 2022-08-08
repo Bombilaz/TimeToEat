@@ -8,7 +8,6 @@ interface TimerProps{
   seconds: number;
 }
 
-
 function Timer({ seconds }: any) {
   const { showSettings, setShowSettings, 
     maxPizza, currentPizza , 
@@ -16,7 +15,6 @@ function Timer({ seconds }: any) {
   const toggleShowSettings = () => {
     setShowSettings((toggle: boolean) => !toggle)
   }
- 
   
   return (
     <div className='timerTwo'>

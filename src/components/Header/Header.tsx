@@ -24,6 +24,7 @@ const Header: FC = () => {
 
   return (
     <S.Container>
+      <PageLink url={'/'} textLink={'Pizzadoro'}/>
       <S.PagesLinks>
         <PageLink url={'/skills'} textLink='Skills' />
         <PageLink url={'/achievements'} textLink='Achievements' />

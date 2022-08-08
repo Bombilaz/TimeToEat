@@ -143,7 +143,6 @@ const MainPage: FC = () => {
 
   return (
     <S.Container>
-      <Header />
       {/*<Timer seconds={timer} />*/}
       {/*<img className='pizza' src={typeTimer ? checkSrcWork() : checkSrcBreak()} alt='какая-то' />*/}
       {/*<div className='playblock'>*/}
