@@ -1,4 +1,4 @@
-import { FC, useContext, useEffect } from "react";
+import {FC, useContext, useEffect, useState} from "react";
 import eight from "../../img/8.png";
 import seven from "../../img/7.png";
 import six from "../../img/6.png";
@@ -17,7 +17,7 @@ import Timer from '../../components/Timer';
 import Header from "../../components/Header/Header";
 
 const MainPage: FC = () => {
-
+  const [isStartedTimer, setIsStartedTimer] = useState(false)
   // const { timer, setTimer } = useContext<any>(AppContext)
   // const { timeInterval, setTimeInterval } = useContext<any>(AppContext);
   // const { typeButton, setTypeButton } = useContext<any>(AppContext);
@@ -146,6 +146,14 @@ const MainPage: FC = () => {
 
       {/*<Timer seconds={timer} />*/}
       {/*<img className='pizza' src={typeTimer ? checkSrcWork() : checkSrcBreak()} alt='какая-то' />*/}
+      {/*<img src={eight.src}/>*/}
+      <S.Pizza src={seven}/>
+
+
+      <S.StartButton
+        src={isStartedTimer ? pause : play}
+        onClick={()=>setIsStartedTimer((prevState) => !prevState)}
+      />
       {/*<div className='playblock'>*/}
       {/*  <img*/}
       {/*    className='play'*/}
