@@ -1,12 +1,14 @@
-import '../src/index.scss'
-import Layout from "../src/components/Layout/Layout";
+import Layout from '../src/components/Layout/Layout';
+import {AppProps} from "next/app";
+import '../src/index.scss';
 
-const myApp = ({ Component, pageProps }) =>{
+
+const myApp = ({ Component, pageProps }: AppProps) => {
   return (
     <Layout>
-      <Component {...pageProps}/>
+      <Component {...pageProps} />
     </Layout>
-  )
-}
+  );
+};
 
-export default myApp
+export default myApp;

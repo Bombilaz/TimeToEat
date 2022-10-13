@@ -1,20 +1,20 @@
-import {FC, useContext, useEffect, useState} from "react";
-import eight from "../../img/8.png";
-import seven from "../../img/7.png";
-import six from "../../img/6.png";
-import five from "../../img/5.png";
-import four from "../../img/4.png";
-import three from "../../img/3.png";
-import two from "../../img/2.png";
-import one from "../../img/1.png";
-import zero from "../../img/0.png";
+import {FC, useContext, useEffect, useState} from 'react';
+import eight from '../../img/8.png';
+import seven from '../../img/7.png';
+import six from '../../img/6.png';
+import five from '../../img/5.png';
+import four from '../../img/4.png';
+import three from '../../img/3.png';
+import two from '../../img/2.png';
+import one from '../../img/1.png';
+import zero from '../../img/0.png';
 import * as S from './MainPage.styles';
 
-import play from '../../img/play.png';
+import play from "../../img/play.png";
 import pause from '../../img/pause.png';
 import { AppContext } from '../../components/AppContext';
 import Timer from '../../components/Timer';
-import Header from "../../components/Header/Header";
+import Header from '../../components/Header/Header';
 
 const MainPage: FC = () => {
   const [isStartedTimer, setIsStartedTimer] = useState(false)
@@ -140,6 +140,8 @@ const MainPage: FC = () => {
   // }
 
   
+const x = 1
+
 
   return (
     <S.Container>
@@ -147,12 +149,15 @@ const MainPage: FC = () => {
       {/*<Timer seconds={timer} />*/}
       {/*<img className='pizza' src={typeTimer ? checkSrcWork() : checkSrcBreak()} alt='какая-то' />*/}
       {/*<img src={eight.src}/>*/}
-      <S.Pizza src={seven}/>
+      <S.Pizza
+        src={eight}
+      />
 
 
       <S.StartButton
         src={isStartedTimer ? pause : play}
         onClick={()=>setIsStartedTimer((prevState) => !prevState)}
+        alt={'хуета'}
       />
       {/*<div className='playblock'>*/}
       {/*  <img*/}

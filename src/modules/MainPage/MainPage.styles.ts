@@ -30,7 +30,7 @@ export const StartButton = styled(Image)`
   position: absolute; 
   top: 51%;
   left: 50%;
-  width: 5vw;
+    width: 5vw;
   height: 5vw;
   transform: translate(-50%, -51%);
 `
